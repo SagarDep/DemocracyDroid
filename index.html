@@ -4,60 +4,76 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Free Democracy Now! for Android by polypmer</title>
-
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   </head>
   <body>
-    <div class="wrapper">
+
       <header>
         <h1>Free Democracy Now! for Android</h1>
-        <p>This application parses the Democracy Now! rss feed </p>
-
-        <p class="view"><a href="https://github.com/polypmer/democracynow-android">View the Project on GitHub <small>polypmer/democracynow-android</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/polypmer/democracynow-android/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/polypmer/democracynow-android/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/polypmer/democracynow-android">View On <strong>GitHub</strong></a></li>
-        </ul>
+        <p>This (free as in speech) application parses the Democracy Now! RSS-feed on Android devices.</p>
       </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/polypmer/democracynow-android" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/polypmer/democracynow-android/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/polypmer/democracynow-android/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
       <section>
-        <h3>
-<a id="watch-democracy-now" class="anchor" href="#watch-democracy-now" aria-hidden="true"><span class="octicon octicon-link"></span></a>Watch Democracy Now!</h3>
+        <h1>
+<a id="free-democracy-now-for-android-" class="anchor" href="#free-democracy-now-for-android-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Free Democracy Now! for Android <img src="https://github.com/polypmer/democracynow-android/blob/master/main/res/drawable/dm_icon_small.png?raw=true">
+</h1>
 
-<p>Democracy Now! is an independent daily news broadcast (licensed under creative commons). They refer to themselves as "the War and Peace Report." Democracy Now! is a wonderful alternative to main stream media.</p>
-
-<hr>
-
-<h3>
-<a id="free-democracy-now" class="anchor" href="#free-democracy-now" aria-hidden="true"><span class="octicon octicon-link"></span></a>Free Democracy Now!</h3>
-
-<p>This application parses the Democracy Now (democracynow.org) rss. There is a non-free democracy Now! application on the google play store, and so I wrote this. Although this has less features, there are some positives: the videos aren't downloaded to the device (and sucking up memory) but streamed through the browser or VLC (I use VLC). Unlike the un-free version, this application doesn't stream audio.&lt;/ br&gt;
-I'm using the SimplisticRss library by <a href="https://github.com/ShirwaM/Simplistic-RSS">ShirwaM</a>, modified to get the video url.</p>
-
-<h4>
-<a id="what-todo" class="anchor" href="#what-todo" aria-hidden="true"><span class="octicon octicon-link"></span></a>What todo?</h4>
-
-<p>There a little bug, when you adjust the system volume the video crashes (use VLC's volume adjuster instead).
+<p>This program parses the <a href="http://democracynow.org">Democracy Now!</a> RSS-feed and it links to the video broadcasts. The application sends the intent to open the video in either the Gallery viewer, VLC (recommended), or the Browser. It uses the SimplisticRss library by <a href="https://github.com/ShirwaM/Simplistic-RSS">ShirwaM</a>
 <br>
-<br>
-TODO:<br>
-Add images to the List adapter<br>
-Add podcast/audio function<br>
-Play video in its own activity? I have a mock up for this, but nothing as advanced as the non-free's version. Maybe VLC is just simpler AND better.</p>
+There is an Android application on the play store that plays Democracy Now! feed. It is more comprehensive than this one -- but it's closed source. It allows for audio streaming (in the background), saves the location of the listener/viewer, and displays the description of each episode along with the photograph. The Free Democracy Now! application doesn't do those things, although it does link (under 'donate') to democracynow.org, which the non-free application doesn't do. I was trying to copy it, but even the simple functions of my Free version suffice for my purposes. There are ads in the non-free version and it downloads the videos into the application cache (and runs up a lot of memory) - these are two more features my application doesn't have. : )
+<br></p>
+
+<h2>
+<a id="democracy-now" class="anchor" href="#democracy-now" aria-hidden="true"><span class="octicon octicon-link"></span></a>Democracy Now?!?</h2>
+
+<p>Democracy Now is an excellent independent daily news broadcast. <br></p>
+
+<h2>
+<a id="disclaimer" class="anchor" href="#disclaimer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Disclaimer</h2>
+
+<p><b>I have no affiliation with Democracy Now!</b> (they won't even return my emails). Insofar as I lack these credentials, Google Play store will not accept this application, for intellectual property reasons. I'm pretty sure, though, that Democracy Now broadcasts are Creative Commons, but I can't get a definitive answer. Anyway, if you don't feel like compiling the code, in the "app" directory there is an "app-release.apk" which is the binary of this application. Enjoy : ).</p>
+
+<h2>
+<a id="should-i-keep-todoing" class="anchor" href="#should-i-keep-todoing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Should I keep todoing?:</h2>
+
+<ul>
+  <li>Add images to the List adapter.</li>
+  <li>Add podcast (audio) function.</li>
+  <li>Add descriptions.</li>
+  <li>Add a Video-Viewer Activity?</li>
+</ul>
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/polypmer">polypmer</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p>Project maintained by <a href="https://github.com/polypmer">polypmer</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
 </html>
