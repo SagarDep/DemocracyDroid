@@ -3,14 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Democracy Now! The War and Peace Report Open Source Android App">
-    <meta name="keywords" content="Democracy,Now!,Independent,Media,Democracy Now!, Android, App,Free,Libre,Open">
-    <meta name="author" content="Fenimore Love">
     <title>Democracy Droid! by polypmer</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -18,22 +16,24 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Democracy Droid!</h1>
-        <p>This (free as in speech) application streams and downloads Democracy Now! The war and peace report.</p>
-
-        <p class="view"><a href="https://github.com/polypmer/DemocracyDroid">View the Project on GitHub <small>polypmer/DemocracyDroid</small></a></p>
-
+        <h1 class="header">Democracy Droid!</h1>
+        <p class="header">This (free as in speech) application streams and downloads Democracy Now! The war and peace report.</p>
 
         <ul>
-          <li><a href="https://github.com/polypmer/DemocracyDroid/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/polypmer/DemocracyDroid/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/polypmer/DemocracyDroid">View On <strong>GitHub</strong></a></li>
+          <li class="download"><a class="buttons" href="https://github.com/polypmer/DemocracyDroid/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/polypmer/DemocracyDroid/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/polypmer/DemocracyDroid">View On GitHub</a></li>
         </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/polypmer">polypmer</a></p>
+
+
       </header>
       <section>
         <h1>
-<a id="free-democracy-now-for-android-" class="anchor" href="#free-democracy-now-for-android-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Free Democracy Now! for Android <img src="https://github.com/polypmer/democracynow-android/blob/master/main/res/drawable/dm_icon_small.png?raw=true">
-</h1>
+<a id="free-democracy-now-for-android" class="anchor" href="#free-democracy-now-for-android" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Free Democracy Now! for Android</h1>
+
+<p><img src="http://polypmer.github.io/img/ddicon.png"></p>
 
 <p>This application streams, either in audio or video, the independent media broadcast <a href="http://democracynow.org">Democracy Now!</a> The War and Peace Report. Find it on the google <a href="https://play.google.com/store/apps/details?id=com.workingagenda.democracydroid">PlayStore</a>.</p>
 
@@ -45,28 +45,65 @@
 <h2>
 <a id="disclaimer" class="anchor" href="#disclaimer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Disclaimer</h2>
 
-<p><b>The episodes are licensed under Creative Commons, Attribution-NonCommercial-NoDerivs 3.0 United States. I have no affiliation with Democracy Now!</b> (they won't even return my emails).</p>
+<p><b>The episodes are licensed under Creative Commons, Attribution-NonCommercial-NoDerivs 3.0 United States. I have no affiliation with Democracy Now!</b></p>
 
-<h3>
-<a id="project" class="anchor" href="#project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project</h3>
+<p>Find v.1.5.1 on the Play Store</p>
 
-<p>Democracy Droid uses the SimplisticRss library by <a href="https://github.com/ShirwaM/Simplistic-RSS">ShirwaM</a> and Picasso.</p>
-
-<h3>
-<a id="planned-features" class="anchor" href="#planned-features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Planned features</h3>
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
 
 <ul>
-  <li>Add podcast (audio) downloads.</li>
-  <li>Fix descriptions.</li>
-  <li>Individual Story Feed.</li>
+<li>Democracy Droid GPLv3</li>
+<li>SimplisticRss library Apache 2 - <a href="https://github.com/ShirwaM/Simplistic-RSS">ShirwaM</a>
+</li>
+<li>Picasso Apache 2 - <a href="http://square.github.io/picasso/">http://square.github.io/picasso/</a>
+</li>
+<li>Democracy Now! CC BY-NC-ND 3.0 US</li>
+<li>Jsoup MIT</li>
+</ul>
+
+<h2>
+<a id="bugs" class="anchor" href="#bugs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Bugs</h2>
+
+<ul>
+<li>When swiping through tabs, feeds duplicate</li>
+<li>When scrolling up, headers get squished and blended</li>
+<li>Must restart to effect settings change</li>
+</ul>
+
+<h2>
+<a id="todo" class="anchor" href="#todo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TODO</h2>
+
+<ul>
+<li>Blog reading activity</li>
+<li>(More) Parse Downloaded File Label
+
+<ul>
+<li>Days since field</li>
+</ul>
+</li>
+<li>settings
+
+<ul>
+<li>No Images</li>
+<li>Notifications</li>
+<li>Default stream audio/video</li>
+</ul>
+</li>
+<li>feeds
+
+<ul>
+<li>Add download button</li>
+<li>Delete/see progress of downloads</li>
+</ul>
+</li>
 </ul>
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/polypmer">polypmer</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
   </body>
 </html>
