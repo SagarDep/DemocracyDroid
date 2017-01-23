@@ -1,0 +1,8 @@
+title: Democracy Droid!
+description: This (free as in speech) application streams and downloads Democracy Now! The war and peace report.
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-dinky
+
+gems:
+  - jekyll-mentions
